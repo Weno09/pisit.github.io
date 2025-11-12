@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวนักศึกษา - Phisit Hablakhon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sarabun', 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            padding: 40px;
+        }
+
+        .profile-section {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .section li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .intro-list {
+            line-height: 1.8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #f5576c;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateX(10px);
+        }
+
+        .project-card h3 {
+            color: #f5576c;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 10px;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item strong {
+            color: #667eea;
+            min-width: 100px;
+        }
+
+        .year-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 แนะนำตัวนักศึกษา</h1>
+            <p style="font-size: 1.2em; margin-top: 10px;">Portfolio & Profile</p>
+        </div>
+
+        <div class="content">
+            <div class="profile-section">
+                <img src="11111.jpg" alt="รูปโปรไฟล์" class="profile-img"> 
+            </div>
+
+            <div class="main-content">
+                <div class="section">
+                    <h2>1. แนะนำตัว (Introduction / Profile)</h2>
+                    <div class="intro-list">
+                        <ul style="margin-top: 15px;">
+                            <li><strong>ชื่อไทย:</strong> นายพิสิษฐ์ ฮาบละคร</li>
+                            <li><strong>ชื่ออังกฤษ:</strong> Phisit Hablakhon</li>
+                            <li><strong>มหาวิทยาลัยราชภัฏอุดรธานี / คณะวิทยาศาสตร์ / สาขาวิทยาการคอมพิวเตอร์</strong></li>
+                            <li><strong>ปีการศึกษา:</strong> นักศึกษาปี 3</li>
+                            <li><strong>ความสนใจเฉพาะทาง:</strong> เช่น AI, Web Development,</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>2. ทักษะ (Skills)</h2>    
+                    <div class="skills-grid" style="margin-top: 20px;">
+                        <div class="skill-category">
+                            <h3> Programming</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>HTML/CSS</li>
+                                <li>TtpeScript</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3> AI & Data</h3>
+                            <ul>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3> Tools</h3>
+                            <ul>
+                                <li>Git</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>💡 Soft Skills</h3>
+                            <ul>
+                                <li>การสื่อสาร</li>
+                                <li>การแก้ปัญหา</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>3. ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+                    <p><strong>จุดประสงค์:</strong> แสดงสิ่งที่เคยทำจริง ทั้งในรามข้ามและนอกห้องเรียน</p>
+                    
+                    <div class="projects-grid" style="margin-top: 20px;">
+                        <div class="project-card">
+                            <h3>ทำโครงการ NSC </h3>
+                            <p>โครงการ แอปพลิเคชันแนะนำอาหารสำหรับผู้สูงอายุ</p>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>ทำโปรเจค แอปพลิเคชันแนะนำอาหารสำหรับผู้สูงอายุ</h3>
+                            <p>ทำโปรเจค แอปพลิเคชันแนะนำอาหารสำหรับผู้สูงอายุ รายวิชา การออกแบบและพัฒนาซอฟต์แวร์เชิงวัตถุ (OOAD) </p>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>การแข่งขันพัฒนาโปรแกรม AI Chatbot</h3>
+                            <p>พัฒนา AI Chatbot สำหรับการตอบคำถามแบบอัตโนมัติแบบข้อความด้วยเครื่องมือ Dialogflow CS 66</p>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>การแข่งขันพัฒนาโปรแกรม AI Pictoblox</h3>
+                            <p>เป็นการแข่งขันพัฒนา โดยใช้ Machine Learning ด้วยโปรแกรม PICTOBLOX โดยการประยุกต์ใช้ในการตรวจจับวัตถุ Object Detection  CS 66</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>4. การศึกษา (Education)</h2>
+                    <ul style="margin-top: 10px;">
+                        <li>ชั้นประถมศึกษาชั้นปีที่ 1-6</li>
+                        <li>โรงเรียนบ้านดอนแดงคำอ้อ</li>
+
+                        <li>ชั้นมัธยมศึกษาชั้นปีที่ 1-6</li>
+                        <li>โรงเรียนคำยางพิทยาคม</li>
+
+                        <li>ตอนนี้กำลังศึกษา ปีการศึกษา 1-4</li>
+                        <li>มหาวิทยาลัยราชภัฏอุดรธานี</li>
+                        <li>คณะวิทยาศาสตร์</li>
+                        <li>สาขาวิทยาการคอมพิวเตอร์</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>5. กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+                    <ul style="margin-top: 10px;">
+                        <li>วันที่ 2 กุมภาพันธ์ ได้ไปกิจกรรม งานวันพื้นที่ชุ่มน้ำโลก </li>
+                        <li>ช่วงเดือน กรกฎาคม - กันยายน ได้ไปลงพื้นที่ช่วยงานอาจารย์ โครงการยุวชนอาสา</li>
+                        <li>งานรับปริญญา วันที่ 1-3 6-7 เดือน พฤศจิกายน 2658 ได้ไปช่วยงานอาจารย์ในงานรับปริญญา งานซ้อมรับ วันที่ 1-3 งานรับจริง วันที่ 6-7</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>6. ติดต่อ (Contact)</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>📧 Email:</strong>
+                            <span>66040249114@udru.ac.th</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>🔗 LINE ID:</strong>
+                            <span>0655970136</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📱 Facebook:</strong>
+                            <a href="https://www.facebook.com/share/1EZMRbfpx7/" target="_blank">https://www.facebook.com/share/1EZMRbfpx7/</a>
+
+                        </div>
+                    </div>
+                    <p style="margin-top: 15px;"><strong>ที่อยู่จังหวัด:</strong> (บ้านคำอ้อ ตำบลดงเหนือ อำเภอบ้านม่วง จังหวัดสกลนคร )</p>
+                </div>
+
+                <div class="section">
+                    <h2>7. องค์ประกอบเสริม</h2>
+                    <p><strong>เป้าหมายในอนาคต หรือ Career Interest</strong></p>
+                    <ul style="margin-top: 10px;">
+                        <li>"อยากเป็น โปรแกรมเมอร์</li>
+                        <li>"สนใจพัฒนา Application "</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
